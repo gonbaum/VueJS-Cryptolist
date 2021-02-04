@@ -1,8 +1,8 @@
 <template>
-  <section class="section" style="display: flex; flex-direction:column; align-items:center;">
-    <div style="margin-bottom: 1rem;">
-      <span>Search: </span>
-    <input v-model="keyword">
+  <section class="section" style="display: flex; flex-direction:column; align-items:center; padding: 2rem !important;">
+    <div style="margin-bottom: 1rem; display: flex; align-items:center; ">
+      <span style="margin-right: 1rem;">Search:</span>
+    <input class="input is-primary" v-model="keyword">
     </div>
  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
   <thead>
