@@ -1,8 +1,10 @@
 # Cryptolist (Vue.js + Bulma)
+Display a list of crypto currencies and news related on a different section. Implemented pagination and search bar.
 
 # About 
 This is just a personal playground project built with Vue.js + Bulma CSS .
 
+![The application flow](public/gifs/gif1.gif)
 
 ## Project setup
 ```
