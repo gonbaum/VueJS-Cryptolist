@@ -1,4 +1,8 @@
-# crypto-list
+# Cryptolist (Vue.js + Bulma)
+
+# About 
+This is just a personal playground project built with Vue.js + Bulma CSS .
+
 
 ## Project setup
 ```
