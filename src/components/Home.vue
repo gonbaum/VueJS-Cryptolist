@@ -39,7 +39,8 @@
 
  <div className="Pagination" v-if="keyword == ''">
 			<button 
-				className="Pagination-button"
+				className="button is-primary"
+        style=" margin: 1rem;"
         v-on:click="handlePaginationClick('prev')"
         :disabled="page == 1"
 			>
@@ -51,7 +52,8 @@
 			</span>
 
 			<button 
-				className="Pagination-button"
+				className="button is-primary"
+        style=" margin: 1rem;"
         v-on:click="handlePaginationClick('next')"
         :disabled="page >= totalPages"
 			>
