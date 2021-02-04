@@ -4,7 +4,7 @@ Display a list of crypto currencies and news related on a different section. Imp
 # About 
 This is just a personal playground project built with Vue.js + Bulma CSS .
 
-![The application flow](public/gifs/gif1.gif)
+![The application flow](public/gif/gif1.gif)
 
 ## Project setup
 ```
