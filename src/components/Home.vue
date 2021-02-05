@@ -1,8 +1,8 @@
 <template>
-  <section class="section" style="display: flex; flex-direction:column; align-items:center; padding: 2rem !important;">
-    <div style="margin-bottom: 1rem; display: flex; align-items:center; ">
+  <section class="section">
+    <div id="search-bar">
       <span style="margin-right: 1rem;">Search:</span>
-    <input class="input is-primary" v-model="keyword">
+      <input class="input is-primary" v-model="keyword">
     </div>
  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
   <thead>
@@ -59,6 +59,8 @@
 			>
 			&rarr;
 			</button>
+
+
 	</div>
 
   </section>
@@ -116,3 +118,23 @@ export default {
       }
   }
 </script>
+
+<style >
+body {
+  background-color: black;
+}
+
+section {
+  display: flex; 
+  flex-direction:column; 
+  align-items:center; 
+  padding: 2rem !important;
+}
+
+#search-bar {
+  margin-bottom: 1rem; 
+  display: flex; 
+  align-items:center;
+}
+
+</style>
