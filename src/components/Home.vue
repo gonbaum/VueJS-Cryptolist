@@ -4,7 +4,7 @@
       <span style="margin-right: 1rem;">Search:</span>
       <input class="input is-primary" v-model="keyword">
     </div>
- <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+ <table class="table is-striped is-narrow is-hoverable ">
   <thead>
    <tr class="is-selected">
      <th>#</th>
@@ -28,11 +28,11 @@
   <tbody>
    <tr v-for="(item, key, index) in coins" :key="key">
      <th>{{index}}</th>
-     <td>{{item.name}}</td>
-     <td>{{item.rank}}</td>
-     <td>{{item.price}}</td>
-     <td>{{item.marketCap}}</td>
-     <td>{{item.percentChange24h}}</td>
+     <td label="Name">{{item.name}}</td>
+     <td label="Rank">{{item.rank}}</td>
+     <td label="Price">{{item.price}}</td>
+     <td label="MarketCap">{{item.marketCap}}</td>
+     <td label="24hs Change">{{item.percentChange24h}}</td>
    </tr>
   </tbody>
  </table>
@@ -135,6 +135,29 @@ section {
   margin-bottom: 1rem; 
   display: flex; 
   align-items:center;
+}
+
+@media screen and (max-width: 600px) {
+
+  table thead {
+    display: none;
+  }
+  table tfoot {
+    display: none;
+  }
+  table td {
+    display: flex;
+  }
+  
+  table td::before {
+    content: attr(label);
+    font-weight: bold;
+    width: 120px;
+    min-width: 120px;
+  }
+  table tr {
+    margin-bottom: 0.5rem;
+  }
 }
 
 </style>
